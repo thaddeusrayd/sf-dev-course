@@ -150,3 +150,8 @@ queriedContact.Account.Industry = 'Technology';
 update queriedContact;
 // 2. This call is to update the related account's Industry field.
 update queriedContact.Account; 
+
+// 
+// delete related record
+Account[] queriedAccounts = [SELECT Id FROM Account WHERE Name='SFDC Account'];
+delete queriedAccounts;
