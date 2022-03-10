@@ -75,3 +75,15 @@ System.assertEquals('Prefers to be contacted by email.',
 // delete all contacts with last name smith:
 Contact[] contactsDel = [SELECT Id FROM Contact WHERE LastName='Smith']; 
 delete contactsDel;
+
+//
+// dml exception - dml operation failure
+try {
+    // This causes an exception because 
+    //   the required Name field is not provided.
+    Account acct = new Account();
+    // Insert the account 
+    insert acct;
+} catch (DmlException e) {
+    System.debug('A DML exception has occurred: ' + e.getMessage());
+}
