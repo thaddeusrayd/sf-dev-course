@@ -1,4 +1,6 @@
-// a working visualforce page
+<!-- 
+        a working visualforce page 
+-->
 <apex:page standardController="Contact" >
     <apex:form >
         <apex:pageBlock title="Edit Contact">
