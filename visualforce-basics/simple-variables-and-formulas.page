@@ -3,3 +3,8 @@
 
 <!-- global variable syntax: -->
 {! $GlobalName.fieldName }
+
+<!-- all of these are the same -->
+{! $User.FirstName}
+{!$USER.FIRSTNAME}
+{! $user.firstname }
