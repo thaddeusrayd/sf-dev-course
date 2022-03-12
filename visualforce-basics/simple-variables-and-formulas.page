@@ -1,0 +1,5 @@
+<!-- vf expression syntax: -->
+{! expression }
+
+<!-- global variable syntax: -->
+{! $GlobalName.fieldName }
