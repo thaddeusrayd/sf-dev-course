@@ -20,6 +20,7 @@ public class MyFutureClass {
     }
 }
 
+//
 // batch/scheduled apex
 global class MyBatchableClass implements
             Database.Batchable<sObject>,
@@ -50,3 +51,7 @@ global class MyBatchableClass implements
                               'Meet me at the bar for drinks to celebrate');            
     }
 }
+
+// execution:
+MyBatchableClass myBatchObject = new MyBatchableClass();
+Database.executeBatch(myBatchObject);
